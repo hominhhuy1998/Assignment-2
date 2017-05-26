@@ -1,0 +1,237 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<link href="css.css" rel="stylesheet" type="text/css">
+<!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
+<script>var __adobewebfontsappname__="dreamweaver"</script>
+<script src="http://use.edgefonts.net/germania-one:n4:default.js" type="text/javascript"></script>
+
+</head>
+
+
+<body>
+<div id="banner">
+<ul><table width="1850" border="0">
+  <tbody>
+    <tr>
+      <th width="100" height="100" scope="col"> <img src="dc.png" width="200" height="250" alt=""/> </th>
+      <th width="100" height="60" scope="col"><img src="cooltext243733988137365.png" width="703" height="172" alt=""/></th>
+    </tr>
+  </tbody>
+</table>
+	</ul>
+	</div>
+
+<div id="menu">
+	<ul>
+	<li><a href="index.html">Home</a></li>
+	<li><a href="#">About Fish tastic</a>
+	<ul>
+			<li><a href="history.html">History</a></li>
+			<li><a href="achievement.html">Achievements</a></li>
+		</ul>
+	</li>
+	<li><a href="#">Our Fish</a>
+		<ul>
+			<li><a href="fresh_water_fish.html">Fresh water fish</a></li>
+			<li><a href="salt_water_fish.html">Salt water fish</a></li>
+		</ul>
+	</li>
+	<li><a href="#">Equipment</a>
+	<ul>
+			<li><a href="fishtank.html">Fish Tank</a></li>
+			<li><a href="fishfood.html">Fish Food</a></li>
+			<li><a href="decoration.html">Decoration</a></li>
+			<li><a href="medication.html">Medication</a></li>
+	  </ul>
+	</li>
+	<li><a href="event.html">Event</a></li>
+	<li><a href="#">Online Service</a>
+	<ul>
+			<li><a href="order_form.html">Order Form</a></li>
+			<li><a href="online_feedback.html">Feedback</a></li>
+	  </ul>
+	</li>
+	<li><a href="contact_us.html">Contact us </a></li>
+	<li><a href="references.html">References</a></li>
+  </ul>
+  
+	</div>
+	
+<div id ="content"><center>
+<table width="1000" border="1">
+  <tbody>
+    <tr>
+      <th scope="col">
+<h1>
+    <span style="font-weight: 400"><span style="color: #00C3FF"><strong>Order Form</strong></span>
+ </span> </h1></th>
+    </tr>
+    
+  </tbody>
+</table>
+<table width="500" border="1">
+  <tbody>
+    
+      <th scope="col"><form action="" method="post" name="mainForm" id="mainForm" onsubmit="return checkForm();">
+        <br>
+            <label for="name">Your Name: <img src="cross.png" alt="X" name="nameTick" width="12" height="12"
+                                              id="nameTick"/></label>
+            <input type="text" name="name" id="name" size="40" autofocus onKeyUp="nameEntered(this);"/>
+       
+      <br>
+        <label for="email">Your Email Address:</label>
+        <input type="text" name="email" id="email" size="40" style="color:#000000" onFocus="changeStyle(this)"
+               onBlur="changeColor(this, '#990099')"/>
+ 
+        <br>
+        <label for="phone">Phone</label>
+        <input type="text" name="phone" id="phone" size="40" style="color:#000000"
+               onKeyUp="setColourBasedOnLength('phone', 8)"/>
+               <br>
+        <label for="phone">Card number</label>
+        <input type="text" name="cardid" id="cardid" size="40" style="color:#000000"
+               onKeyUp="setColourBasedOnLength('cardid', 8)"/>
+               <br>
+               <label for="phone">Country</label>
+        <input type="text" name="country" id="country" size="40" style="color:#000000"
+               onKeyUp="setColourBasedOnLength('cardid', 8)"/>
+        
+        
+<table align="center" width="1000" ID="N6">
+    <thead>
+    <th width="27%"></th>
+    <th width="38%">ITEM</th>
+    <th width="13%">PRICE</th>
+    <th width="9%">QTY</th>
+    <th width="12%"></th>
+    <td width="1%"></thead>
+    
+    <tbody>
+    <td height="247"><a href="fishtank.html" ID="fishtankLink" title="Great Choice® Drum Fish Bowl" target="_blank"><img src="fish tank/ima.png" alt="" width="240" height="221" ID="fishtankImage"/></a></td>
+    <td><select ID="fishtankSelect" onchange="checkfishbankSelect(); total();">
+  <option value="Great Choice® Drum Fish Bowl" selected="selected">Great Choice® Drum Fish Bowl
+  <option value="Top Fin® 3.5 Gallon Enchant Aquarium">Top Fin® 3.5 Gallon Enchant Aquarium
+  <option value="Top Fin® Aquarium Starter Kit">Top Fin® Aquarium Starter Kit
+  <option value="Top Fin® Aquarium Starter Kit">Top Fin® Aquarium Starter Kit
+  <option value="Marineland® 60 Gallon Heartland LED Aquarium with Stand">Marineland® 60 Gallon Heartland LED Aquarium with Stand
+  <option value="Clear-For-Life 300 Gallon Rectangle Aquarium">Clear-For-Life 300 Gallon Rectangle Aquarium
+  <option value="Clear-For-Life 180 Gallon Rectangle Aquarium">Clear-For-Life 180 Gallon Rectangle Aquarium
+  <option value="Clear-For-Life 100 Gallon Pentagon UniQuarium">Clear-For-Life 100 Gallon Pentagon UniQuarium
+</select></td>
+    <td>$ <span ID="fishtankPrice">4.99</span></td>
+    <td><input ID="fishtankQty" type="number" min="1" value="0" style="width: 3em" onchange="total()"></td>
+    <td><a class="payment_btn"><input type="reset"  /></a></td>
+    </tbody>
+    
+    <tbody>
+    <td height="275"><a href="fresh_water_fish.html" ID="freshfishLink" title="Bronze corydoras" target="_blank"><img src="our fish/165px-Corydoras_aeneus_2.jpg" alt="" width="235" height="250" ID="freshfishImage"/></a></td>
+    <td><select ID="freshfishSelect" onchange="checkfreshfishSelect(); total();">
+  <option value="Bronze corydoras">Bronze corydoras</option>
+  <option value="Gray bichir, Senegal bichir, or dinosaur bichir">Gray bichir, Senegal bichir, or dinosaur bichir</option>
+  <option value="Salmon-red rainbowfish">Salmon-red rainbowfish</option>
+  <option value="Black phantom tetra">Black phantom tetra</option>
+  <option value="Black tetra, Skirt tetra">Black tetra, Skirt tetra</option>
+  </select></td>
+    <td>$ <span ID="freshfishPrice">0.5</span></td>
+    <td><input ID="freshfishQty" type="number" min="1" value="0" style="width: 3em" onchange="total()"></td>
+    <td><a class="payment_btn"><input type="reset"  /></a></td>
+    </tbody>
+         
+    <tbody>
+    <td height="275"><a href="fishfood.html" ID="fishfoodLink" title="Aqueon® Betta Pellets Fish Food" target="_blank"><img src="fish food/ima6.png" alt="" width="235" height="250" ID="fishfoodImage"/></a></td>
+    <td><select ID="fishfoodSelect" onchange="checkfishfoodSelect(); total();">
+  <option value="Aqueon® Betta Pellets Fish Food">Aqueon® Betta Pellets Fish Food</option>
+  <option value="Top Fin® Aquarium Starter Kit 1">Top Fin® Aquarium Starter Kit</option>
+  <option value="Top Fin® Aquarium Starter Kit 2">Top Fin® Aquarium Starter Kit</option>
+  <option value="Aqueon® Cichlid Pellets Fish Food 1">Aqueon® Cichlid Pellets Fish Food</option>
+  <option value="Aqueon® Cichlid Pellets Fish Food 2">Aqueon® Cichlid Pellets Fish Food</option>
+  <option value="Aqueon® Cichlid Pellets Fish Food 3">Aqueon® Cichlid Pellets Fish Food</option>
+  </select></td>
+    <td>$ <span ID="fishfoodPrice">3.29</span></td>
+    <td><input ID="fishfoodQty" type="number" min="1" value="0" style="width: 3em" onchange="total()"></td>
+    <td><a class="payment_btn"><input type="reset"  /></a></td>
+    </tbody>     
+    
+    <tbody>
+    <td height="275"><a href="salt_water_fish.html" ID="saltfishLink" title="Bellus angelfish" target="_blank"><img src="our fish/180px-Genicanthus_bellus.jpg" alt="" width="235" height="250" ID="saltfishImage"/></a></td>
+    <td><select ID="saltfishSelect" onchange="checksaltfishSelect(); total();">
+  <option value="Bellus angelfish">Bellus angelfish</option>
+  <option value="Emperor angelfish">Emperor angelfish</option>
+  <option value="Majestic angelfish ">Majestic angelfish </option>
+  <option value="Cherubfish or Pygmy angelfish">Cherubfish or Pygmy angelfish</option>
+  <option value="Lemonpeel angelfish">Lemonpeel angelfish</option>
+  </select></td>
+    <td>$ <span ID="saltfishPrice">149.99</span></td>
+    <td><input ID="saltfishQty" type="number" min="1" value="0" style="width: 3em" onchange="total()"></td>
+    <td><a class="payment_btn"><input type="reset"  /></a></td>
+    </tbody>     
+    
+    <tbody>
+    <td height="275"><a href="medication.html" ID="medicationLink" title="API® Aquarium Salt" target="_blank"><img src="medication/ima.png" alt="" width="235" height="250" ID="medicationImage"/></a></td>
+    <td><select ID="medicationSelect" onchange="checkmedicationSelect(); total();">
+  <option value="API® Aquarium Salt">API® Aquarium Salt</option>
+  <option value="Instant Ocean® Sea Salt">Instant Ocean® Sea Salt</option>
+  <option value="Instant Ocean® Reef Crystals Aquarium Reef Salt">Instant Ocean® Reef Crystals Aquarium Reef Salt</option>
+  <option value="Tetra® Pond Replacement Pre-Filter Foam">Tetra® Pond Replacement Pre-Filter Foam</option>
+  <option value="Tetra® Pond Submersible Flat Box Filter">Tetra® Pond Submersible Flat Box Filter</option>
+  <option value="API® CO2 Booster Freshwater Aquarium Plant Supplement">API® CO2 Booster Freshwater Aquarium Plant Supplement</option>
+  <option value="Flourite® Premium Aquarium Plant Substrate">Flourite® Premium Aquarium Plant Substrate</option>
+  <option value="API® Guide Fish Problem Solving General Cure">API® Guide Fish Problem Solving General Cure</option>
+  <option value="API® Pimafix Fish Fungal Infection Treatment">API® Pimafix Fish Fungal Infection Treatment</option>
+  </select></td>
+    <td>$ <span ID="medicationPrice">3.49</span></td>
+    <td><input ID="medicationQty" type="number" min="1" value="0" style="width: 3em" onchange="total()"></td>
+    <td><a class="payment_btn"><input type="reset"  /></a></td>
+    </tbody> 
+    
+    <tbody>
+    <td height="275"><a href="decoration.html" ID="decorationLink" title="Top Fin® Artificial Aquarium Plant Variety Pack " target="_blank"><img src="decoration/ima.png" alt="" width="235" height="250" ID="decorationImage"/></a></td>
+    <td><select ID="decorationSelect" onchange="checkdecorationSelect(); total();">
+  <option value="Top Fin® Artificial Aquarium Plant Variety Pack">Top Fin® Artificial Aquarium Plant Variety Pack</option>
+  <option value="Top Fin® Premium Quality Aquarium Gravel1">Top Fin® Premium Quality Aquarium Gravel1</option>
+  <option value="Top Fin® Premium Quality Aquarium Gravel2">Top Fin® Premium Quality Aquarium Gravel2</option>
+  <option value="Top Fin® Premium Aquarium Gravel">Top Fin® Premium Aquarium Gravel</option>
+  </select></td>
+    <td>$ <span ID="decorationPrice">9.99</span></td>
+    <td><input ID="decorationQty" type="number" min="1" value="0" style="width: 3em" onchange="total()"></td>
+    <td><a class="payment_btn"><input type="reset"  /></a></td>
+    </tbody> 
+</table>
+<table width="1000" border="1">
+  <tbody>
+    <tr>
+      <th scope="col">
+<h1>
+    <span style="font-weight: 400"><span style="color: #00C3FF"><strong><h3 CLASS="center"><center>TOTAL:  <span ID="toalPrice">$0
+    <div id="submission">
+            <!--<input type="reset" value="Reset" name="Reset" id="Reset" onclick="return confirm('Reset all fields?')"/>-->
+            <input type="reset" value="Reset" name="Reset" id="Reset" onclick="return resetForm()"/>
+            or
+            <input type="submit" value="Submit"/>
+        </div>
+    </span></center></h3></strong></span>
+ </span> </h1></th>
+    </tr>
+    
+  </tbody>
+</table>
+
+
+
+
+
+	
+	<div id="footer">
+    <p>&copy; 2016-2017 Ho Minh Huy, <a href="http://www.jcu.edu.au/" target="_self">Fish-Tastic</a> | <a
+            href="#header" target="_self">To Top</a></p>
+
+	
+	
+</div>
+<script type="text/javascript" src="Untitled-2.js"></script>
+
+</body>
+</html>
